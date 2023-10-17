@@ -1,0 +1,36 @@
+#notFound404{
+    background-color: #fff;
+    height: calc(80vh - 48px);
+    padding-top: 10vh;
+}
+
+#notFound404 h1,
+#notFound404 h2,
+#notFound404 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#notFound404 h1{
+    color: red;
+    font-size: 10vh;
+}
+
+#notFound404 h2{
+    font-size: 5vh;
+}
+
+#notFound404 h3{
+    color: #333;
+    font-size: 3vh;
+    font-style: normal;
+    text-transform: none;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+#notFound404 a{
+    font-size: 2vh;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    text-transform: uppercase;
+}

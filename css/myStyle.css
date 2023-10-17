@@ -1,0 +1,196 @@
+/************************************************************/
+/*MAIN*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    animation: hideOverflow 10s forwards;
+}
+#header{
+    color: white;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+#main{
+    margin: 0;
+    background-color: white;
+    padding: 7vh 3vh 0 3vh;
+    height: calc(80vh - 48px);
+}
+#valovi{
+    background-image: url(../img/valovi.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 50px;
+    bottom: 0;
+    margin-bottom: -2px;
+}
+
+
+
+
+/************************************************************/
+/* TEXT */
+h1{
+    font-size: 7vh;
+    color: white;
+    font-weight: bold;
+    font-family: 'Kalam', Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-size: calc(3vh + 4px);
+}
+h3{
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2vh;
+    padding-top: 15px;
+    font-style: italic;
+    color: gray;
+}
+#header h2{
+    text-transform: uppercase;
+    font-size: calc(2vh + 2px);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/************************************************************/
+/*KOLONE*/
+
+.kolona{
+    padding: 0 3vh 0 3vh;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+@keyframes example {
+    0% {opacity: 0; transform: translateY(50px); }
+    100% {opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hideOverflow {
+    0% {overflow: hidden; }
+    100% {overflow: auto; }
+}
+
+.kolona2{
+    background-color: white;
+    transition: all 0.4s;
+    border-radius: 10px;
+    height:auto;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+.kolona2 img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.text{
+    padding: 20px 10px;
+}
+
+.kolona:hover .kolona2{
+    transform: scale(105%);
+}
+
+/************************************************************/
+/* MOBITEL */
+
+@media screen and (max-width: 728px) {
+    #main{
+        height: auto;
+        margin-bottom: 75px;
+    }
+    h1{
+        font-size: 9vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    h3{
+        font-size: calc(3vw + 2px);
+    }
+    p{
+        font-size: 4vw;
+    }
+    #k1,#k2,#k3,#k4{
+        animation: none;
+        opacity: 1;
+    }
+    .kolona{
+        padding: 0;
+    }
+    .kolona2{
+        height: auto;
+    }
+    .kolona:hover .kolona2{
+        transform:none;
+    }
+}
+
+/************************************************************/
+/* PRELOADER */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: BLUE;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 4vh);
+    left: calc(50% - 4vh);
+    border: 1vh solid white;
+    border-top-color: cornflowerblue;
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

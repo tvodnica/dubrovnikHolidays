@@ -1,0 +1,109 @@
+#basic-info ul{
+    background-color: #f5f5ff;
+    border-radius: 5%;
+    margin-right: 50px;
+}
+.slike45{
+    display: block;
+}
+
+.form-group{
+  padding: 5px;
+}
+
+#textarea{
+  font-size: 105%;
+}
+
+hr{
+  margin: 0 50px 0 50px;
+}
+
+.reviews{
+  margin: 0 50px 0 50px;
+  padding: 0 100px 0 100px;
+}
+
+.kontakt{
+  padding: 0 75px 50px 75px;
+}
+
+#tipka{
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+
+.serviceIkona{
+  font-size: 50px;
+  color: #010483;
+}
+
+.book-sekcija{
+  margin-bottom: 15px;
+  background: rgba(1, 4, 136, 0.9);
+  color: #fff;
+  border-top: 4px solid #1acc8d;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.sakrijZasluge{
+  width: 100vw;
+  height: 60px;
+  background-color: white;
+  position: relative;
+  margin-top: -60px;
+  z-index: 99999;
+}
+
+.btn-book {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1acc8d;
+  border: 0;
+}
+
+.btn-book:hover{
+  background: #17b57d;
+}
+
+@media (max-width: 992px) {
+    #basic-info ul {
+      margin: 0 0 25px 0;
+    }
+    #divKarta{
+      height: 250px;
+    }
+    .reviews{
+      margin: 0 10px 0 10px;
+      padding: 0;
+    }
+    .kontakt{
+      padding: 0 10px 0 10px;
+    }
+    hr{
+      display: none;
+    }
+    .contact{
+      padding-top: 20px;
+    }
+    #tipka{
+      justify-content: center;
+    }
+    
+}
+  @media screen and (max-width: 768px) {
+    .slike45{
+      display: none;
+  }
+  
+}
+

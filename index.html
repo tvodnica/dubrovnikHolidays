@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Dubrovnik holidays - Adriatic's finest</title>
+    <meta content="Choose one of the best accommodations on the Adriatic and make the most out of your vacation in Croatia." name="description">
+    <meta content="Dubrovnik, holidays, accommodation, hotel, vacation, rentals" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/myStyle.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+
+</head>
+
+<body class="text-center">
+  
+    <div id="preloader"></div>
+
+    <div id="header">
+        <h2>Dubrovnik holidays</h2>
+        <h1>The best of Dubrovnik</h1>
+    </div>
+    
+    <div id="valovi">
+    </div>
+
+    <div id="main" class="row">
+
+        <div class="col-lg-3 col-12 kolona" id="k1">
+            <a href="/houseTereza">
+                <div class="kolona2">
+                    <img src="img/houseTereza.jpg" class="img-fluid" alt="House Tereza from the sea">
+                    <div class="text">
+                        <h2>House Tereza</h2>
+                        <h3>Dubrovnik</h3>
+                        <p>The sea cannot be any closer</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-12 kolona" id="k2">
+            <a href="/topSpot">
+                <div class="kolona2">
+                    <img src="img/topSpot.jpg" class="img-fluid" alt="Top spot apartments as seen on the map of the old town">
+                    <div class="text">
+                        <h2>Top spot apartments</h2>
+                        <h3>Dubrovnik</h3>
+                        <p>Old town without any stairs</p>
+                    </div>
+                </div>  
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-12 kolona" id="k3">
+            <a href="/aLittleGem">
+                <div class="kolona2">
+                    <img src="img/aLittleGem.jpg" class="img-fluid" alt="A little gem cottage in the nature">  
+                    <div class="text">
+                        <h2>A little gem</h2>
+                        <h3>Dubrovnik</h3>
+                        <p>Your perfect rural retreat</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-12 kolona" id="k4">
+             <a href="/services">
+                <div data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer">
+                    <div class="kolona2">
+                        <img src="https://dubrovnikholidays.net/services/assets/img/fly3.jpg" class="img-fluid" alt="A girl with a summer hat on the bow of the boat">  
+                        <div class="text">
+                            <h2>Tours and excursions</h2>
+                            <h3>Dubrovnik</h3>
+                            <p>Make the most out of your stay</p>
+                        </div>
+                    </div>
+                </div>
+             </a>
+        </div>
+        
+        <!-- Modal 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" style="color: black; font-family: Arial, Helvetica, sans-serif" id="exampleModalLabel">Choose where to go</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This accommodation does not have a dedicated website. Instead you can view it on one of the booking sites where it's listed.
+                <div class="row mt-5 mb-5">
+                    <div class="col-6">
+                        <a href="https://www.airbnb.com/rooms/628012999904017738">
+                            <img src="img/airbnbx.png" class="img-fluid" style="width: 50%;">
+                         </a>
+                     </div>
+                    <div class="col-6">
+                        <a href="https://www.booking.com/hotel/hr/paradise-view-hvar">
+                            <img src="img/bookingcomx.png" class="img-fluid" style="width: 50%;">
+                        </a>
+                    </div>
+                </div>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+        -->
+
+    </div>
+   
+
+    <script>
+        let preloader = document.getElementById('preloader');
+        window.addEventListener('load', () => {
+            preloader.remove();
+            
+            var x = window.matchMedia("(max-width: 768px)");
+            if (!x.matches) { // If not on mobile
+                
+                let k1 = document.getElementById('k1');
+                let k2 = document.getElementById('k2');
+                let k3 = document.getElementById('k3');
+                let k4 = document.getElementById('k4');
+                k1.style.animation = 'example 1s forwards';            
+                k2.style.animation = 'example 1s forwards';
+                k3.style.animation = 'example 1s forwards';
+                k4.style.animation = 'example 1s forwards';
+    
+                k2.style.animationDelay = '500ms';
+                k3.style.animationDelay = '1000ms';
+                k4.style.animationDelay = '1500ms';
+                
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
